@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "job-board-api",
   "version": "1.0.0",
   "description": "RESTFUL application for creating and application to job applications.",
