@@ -8,3 +8,33 @@
 [35m[39m
 [2023-09-27 21:16:34:1634] [32minfo[39m: [32mServer running on 3001[39m
 [2023-09-27 21:16:37:1637] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:12:47:1247] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:12:50:1250] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:13:50:1350] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/dev/users 404 152 - 4.285 ms[39m
+[35m[39m
+[2023-09-27 22:24:28:2428] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:24:31:2431] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:25:03:253] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/dev/users 500 486 - 1272.059 ms[39m
+[35m[39m
+[2023-09-27 22:27:26:2726] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:27:29:2729] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:27:46:2746] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/dev/users 200 33 - 273.269 ms[39m
+[35m[39m
+[2023-09-27 22:48:00:480] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:48:03:483] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:48:22:4822] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/dev/users 500 1429 - 3.252 ms[39m
+[35m[39m
+[2023-09-27 22:51:39:5139] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:51:42:5142] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:51:44:5144] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/dev/users 500 1440 - 3.237 ms[39m
+[35m[39m
+[2023-09-27 22:53:02:532] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:53:05:535] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:53:29:5329] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/dev/users 500 531 - 1247.309 ms[39m
+[35m[39m
+[2023-09-27 22:56:37:5637] [32minfo[39m: [32mServer running on 3001[39m
+[2023-09-27 22:56:39:5639] [32minfo[39m: [32mDatabase is good[39m
+[2023-09-27 22:56:56:5656] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/dev/users 201 323 - 262.822 ms[39m
+[35m[39m
+[2023-09-27 23:01:50:150] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/dev/users 200 322 - 1287.270 ms[39m
+[35m[39m
