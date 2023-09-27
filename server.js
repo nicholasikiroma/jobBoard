@@ -1,7 +1,8 @@
-import app from "./app/index";
+import app from "./app/index.js";
+import logger from "./app/utils/logger.js";
 
-port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  `App running on ${port}`;
+  logger.info(`Server running on ${port}`);
 });
