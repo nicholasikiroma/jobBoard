@@ -1,5 +1,7 @@
 import morgan from "morgan";
-import logger from "../utils/logger.js";
+import logger from "../config/logger.js";
+import pkg from "../config/baseConfigs.cjs";
+const { env: NODE_ENV } = pkg;
 
 const stream = {
   // Use the http severity
@@ -7,7 +9,7 @@ const stream = {
 };
 
 const skip = () => {
-  const env = process.env.NODE_ENV || "development";
+  const env = NODE_ENV || "development";
   return env !== "development";
 };
 

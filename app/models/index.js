@@ -1,9 +1,23 @@
 import { Sequelize } from "sequelize";
-import logger from "./app/utils/logger.js";
+import logger from "../config/logger.js";
+import pkg from "../config/baseConfigs.cjs";
+const { sequelize } = pkg;
+import userModels from "./user.model.js";
+import jobPostingModels from "./jobPosting.model.js";
+import applicationModels from "./application.model.js";
+import skillsModels from "./skills.model.js";
+import userSkillsModels from "./userSkills.model.js";
 
 const dB = {};
-
-const sequelizeInstance = new Sequelize();
+const sequelizeInstance = new Sequelize(
+  sequelize.database,
+  sequelize.user,
+  sequelize.password,
+  {
+    host: sequelize.host,
+    dialect: "postgres",
+  }
+);
 
 sequelizeInstance
   .authenticate()
@@ -17,14 +31,11 @@ sequelizeInstance
 dB.Sequelize = Sequelize;
 dB.sequelize = sequelizeInstance;
 
-dB.users = require("./user.model.js")(sequelizeInstance, Sequelize);
-dB.jobPostings = require("./jobPosting.model.js")(sequelizeInstance, Sequelize);
-dB.applications = require("./application.model.js")(
-  sequelizeInstance,
-  Sequelize
-);
-dB.skills = require("./skills.model.js")(sequelizeInstance, Sequelize);
-dB.userSkills = require("./userSkills.model.js")(sequelizeInstance, Sequelize);
+dB.users = userModels(sequelizeInstance, Sequelize);
+dB.jobPostings = jobPostingModels(sequelizeInstance, Sequelize);
+dB.applications = applicationModels(sequelizeInstance, Sequelize);
+dB.skills = skillsModels(sequelizeInstance, Sequelize);
+dB.userSkills = userSkillsModels(sequelizeInstance, Sequelize);
 
 // association
 function associateModels() {
@@ -51,7 +62,6 @@ function associateModels() {
   });
 }
 
-// method
 associateModels();
 
 export default dB;

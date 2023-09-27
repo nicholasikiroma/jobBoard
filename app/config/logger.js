@@ -4,6 +4,8 @@ import {
   transports as _transports,
   createLogger,
 } from "winston";
+import pkg from "./baseConfigs.cjs";
+const { env: NODE_ENV } = pkg;
 
 // Define your severity levels.
 // With them, You can create log files,
@@ -21,7 +23,7 @@ const levels = {
 // if the server was run in development mode; otherwise,
 // if it was run in production, show only warn and error messages.
 const level = () => {
-  const env = process.env.NODE_ENV || "development";
+  const env = NODE_ENV || "development";
   const isDevelopment = env === "development";
   return isDevelopment ? "debug" : "warn";
 };
@@ -50,7 +52,7 @@ const format = _format.combine(
   _format.colorize({ all: true }),
 
   // Define the format of the message showing the timestamp, the level and the message
-  _format.printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
+  _format.printf((info) => `[${info.timestamp}] ${info.level}: ${info.message}`)
 );
 
 // Define which transports the logger must use to print out messages.
