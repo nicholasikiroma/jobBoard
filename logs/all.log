@@ -236,3 +236,71 @@
 [2023-10-10 11:07:15:715] [32minfo[39m: [32mDatabase is good[39m
 [2023-10-10 11:11:39:1139] [32minfo[39m: [32mServer running on 3001[39m
 [2023-10-10 11:11:42:1142] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 11:14:11:1411] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:14:14:1414] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users - - - - ms[39m
+[35m[39m
+[2023-10-10 11:14:38:1438] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:14:58:1458] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users - - - - ms[39m
+[35m[39m
+[2023-10-10 11:16:07:167] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:16:17:1617] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users - - - - ms[39m
+[35m[39m
+[2023-10-10 11:19:43:1943] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 11:19:46:1946] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 11:20:02:202] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:20:02:202] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users 500 611 - 701.863 ms[39m
+[35m[39m
+[2023-10-10 11:20:30:2030] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 11:20:32:2032] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 11:20:33:2033] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:20:43:2043] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users - - - - ms[39m
+[35m[39m
+[2023-10-10 11:25:06:256] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 11:25:08:258] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 11:25:23:2523] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:25:50:2550] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users - - - - ms[39m
+[35m[39m
+[2023-10-10 11:34:28:3428] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 11:34:31:3431] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 11:34:48:3448] [31merror[39m: [31mError message from the centralized error-handling component User account with email already exists[39m
+[2023-10-10 11:34:56:3456] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users - - - - ms[39m
+[35m[39m
+[2023-10-10 13:00:34:034] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 13:00:36:036] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 13:01:25:125] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 13:01:27:127] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 13:01:31:131] [31merror[39m: [31mCONFLICT: User account with email already exists[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:39:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-10 13:04:29:429] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 13:04:32:432] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 13:06:43:643] [31merror[39m: [31mCONFLICT: User account with email already exists[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:39:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-10 13:08:37:837] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 13:08:39:839] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 13:08:53:853] [31merror[39m: [31mCONFLICT: User account with email already exists[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:39:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-10 13:12:24:1224] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 13:12:26:1226] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 13:12:33:1233] [31merror[39m: [31mCONFLICT: User account with email already exists[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:39:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-10 13:16:20:1620] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 13:16:27:1627] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-10 13:16:42:1642] [31merror[39m: [31mCONFLICT: User account with email already exists[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:39:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-10 13:16:42:1642] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/users 409 110 - 737.608 ms[39m
+[35m[39m

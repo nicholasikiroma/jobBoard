@@ -1,10 +1,9 @@
 import { Router } from "express";
 import pkg from "../config/baseConfigs.cjs";
 const { env: NODE_ENV } = pkg;
-//import { router as applicationRoute } from "./application.route.js";
-//import { router as jobsRoute } from "./jobPosting.route.js";
 import userRouter from "./user.route.js";
 import authRouter from "./auth.routes.js";
+import jobRouter from "./jobPosting.route.js";
 
 const router = Router();
 
@@ -13,10 +12,10 @@ const defaultRoutes = [
   //   path: "/applications",
   //   route: applicationRoute,
   // },
-  // {
-  //   path: "/job-postings",
-  //   route: jobsRoute,
-  // },
+  {
+    path: "/job-postings",
+    route: jobRouter,
+  },
   {
     path: "/users",
     route: userRouter,

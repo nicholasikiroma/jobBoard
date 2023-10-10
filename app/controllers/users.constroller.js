@@ -1,4 +1,4 @@
-import expressAsyncHandler from "express-async-handler";
+import asyncHandler from "express-async-handler";
 import {
   getUserByEmail,
   getUserByID,
@@ -13,7 +13,7 @@ import { APIError } from "../config/error.js";
 /**
  *
  */
-export const fetchUsers = expressAsyncHandler(async (req, res) => {
+export const fetchUsers = asyncHandler(async (req, res) => {
   const allUsers = await getUsers();
   res.send(allUsers);
 });
@@ -21,7 +21,7 @@ export const fetchUsers = expressAsyncHandler(async (req, res) => {
 /**
  *
  */
-export const fetchOneUser = expressAsyncHandler(async (req, res) => {
+export const fetchOneUser = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   const user = await getUserByID(userId);
 
@@ -31,7 +31,7 @@ export const fetchOneUser = expressAsyncHandler(async (req, res) => {
 /**
  *
  */
-export const createUser = expressAsyncHandler(async (req, res) => {
+export const createUser = asyncHandler(async (req, res, next) => {
   const data = req.body;
 
   const existingUser = await getUserByEmail(data.email);
@@ -49,7 +49,7 @@ export const createUser = expressAsyncHandler(async (req, res) => {
   });
 });
 
-export const updateOneUser = expressAsyncHandler(async (req, res) => {
+export const updateOneUser = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   const data = req.body;
 
@@ -57,7 +57,7 @@ export const updateOneUser = expressAsyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ message: "Account updated" });
 });
 
-export const deleteOneUser = expressAsyncHandler(async (req, res) => {
+export const deleteOneUser = asyncHandler(async (req, res) => {
   const { userId } = req.params;
 
   const user = await removeUser(userId);

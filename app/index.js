@@ -20,7 +20,7 @@ app.use(async (err, req, res, next) => {
   if (!errorHandler.isTrustedError(err)) {
     next(err);
   }
-  await errorHandler.handleError(err);
+  await errorHandler.handleError(err, res);
 });
 
 export default app;
