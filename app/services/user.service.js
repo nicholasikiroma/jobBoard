@@ -1,6 +1,7 @@
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
+import logger from "../config/logger.js";
 
 /**
  *
@@ -65,14 +66,6 @@ export async function getUserByID(userId) {
  */
 export async function getUserByEmail(email) {
   const user = await dB.users.findOne({ where: { email: email } });
-  if (!user) {
-    throw new APIError(
-      "NOT FOUND",
-      httpStatus.NOT_FOUND,
-      true,
-      "User account not found"
-    );
-  }
   return user;
 }
 

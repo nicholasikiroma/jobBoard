@@ -13,7 +13,7 @@ const jobRouter = express.Router();
 
 jobRouter.use(jwtRequired);
 
-jobRouter.get("/:id", fetchOneJob);
+jobRouter.get("/:jobId", fetchOneJob);
 jobRouter.get("/users/:userId", fetchUserJobs);
 jobRouter.get("", fetchAllJobs);
 jobRouter.post("", createJob);

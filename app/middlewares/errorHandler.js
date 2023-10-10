@@ -1,6 +1,7 @@
 import { BaseError } from "../config/error.js";
 import logger from "../config/logger.js";
 import pkg from "../config/baseConfigs.cjs";
+import httpStatus from "http-status";
 const { env } = pkg;
 
 class ErrorHandler {
@@ -11,9 +12,13 @@ class ErrorHandler {
     if (env === "development") {
       logger.error(err.stack);
     }
-    return res
-      .status(httpCode)
-      .send({ error: name, statusCode: httpCode, message, isOperational });
+    const statusCode = httpCode ? httpCode : httpStatus.INTERNAL_SERVER_ERROR;
+    return res.status(statusCode).send({
+      error: name,
+      statusCode: statusCode,
+      message,
+      isOperational: isOperational ? isOperational : false,
+    });
   }
 
   isTrustedError(error) {

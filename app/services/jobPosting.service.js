@@ -1,6 +1,6 @@
 import httpStatus from "http-status";
-import { APIError } from "../config/error";
-import dB from "../models";
+import { APIError } from "../config/error.js";
+import dB from "../models/index.js";
 
 export async function getJobById(jobId) {
   const job = await dB.jobPostings.findByPk(jobId);
@@ -92,5 +92,5 @@ export async function destroyJob(jobId) {
       "Failed to delete job posting"
     );
   }
-  return jobUpdate;
+  return job;
 }

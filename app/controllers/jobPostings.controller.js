@@ -6,7 +6,6 @@ import {
   updateOneJob,
   destroyJob,
   getAllJobs,
-  getAllJobs,
   newJob,
   getUserJobs,
 } from "../services/jobPosting.service.js";
@@ -45,17 +44,17 @@ export const createJob = asyncHandler(async (req, res) => {
   const data = req.body;
   const role = req.role;
 
-  if (!role === "employer" || !role === "admin") {
+  if (role === "employer" || role === "admin") {
+    const job = await newJob(data);
+    return res.status(httpStatus.CREATED).send(job);
+  } else {
     throw new APIError(
       "UNAUTHORIZED",
       httpStatus.UNAUTHORIZED,
       true,
-      "You do not have the right permissions to create a job posting"
+      "You do not have permissions to access this resource"
     );
   }
-
-  const job = await newJob(data);
-  res.status(httpStatus.CREATED).send(job);
 });
 
 // update job
