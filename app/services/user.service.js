@@ -1,3 +1,5 @@
+import httpStatus from "http-status";
+import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
 
 /**
@@ -5,14 +7,19 @@ import dB from "../models/index.js";
  * @returns
  */
 export async function getUsers() {
-  try {
-    const users = await dB.users.findAll({
-      attributes: { exclude: ["hashed_password"] },
-    });
-    return users;
-  } catch (err) {
-    throw new Error("Something went wrong");
+  const users = await dB.users.findAll({
+    attributes: { exclude: ["hashed_password"] },
+  });
+  if (!users) {
+    throw new APIError(
+      "INTERNAL SERVER ERROR",
+      httpStatus.INTERNAL_SERVER_ERROR,
+      true,
+      "Unable to fetch users."
+    );
   }
+
+  return users;
 }
 
 /**
@@ -21,12 +28,16 @@ export async function getUsers() {
  * @returns
  */
 export async function newUser(data) {
-  try {
-    const user = await dB.users.create({ ...data });
-    return user;
-  } catch (err) {
-    throw new Error(err);
+  const user = await dB.users.create({ ...data });
+  if (!user) {
+    throw new APIError(
+      "INTERNAL SERVER ERROR",
+      httpStatus.INTERNAL_SERVER_ERROR,
+      true,
+      "Unable to create new user account"
+    );
   }
+  return user;
 }
 
 /**
@@ -35,12 +46,16 @@ export async function newUser(data) {
  * @returns
  */
 export async function getUserByID(userId) {
-  try {
-    const user = await dB.users.findByPk(userId);
-    return user;
-  } catch (err) {
-    throw new Error(err.message);
+  const user = await dB.users.findByPk(userId);
+  if (!user) {
+    throw new APIError(
+      "NOT FOUND",
+      httpStatus.NOT_FOUND,
+      true,
+      "User account not found"
+    );
   }
+  return user;
 }
 
 /**
@@ -49,12 +64,16 @@ export async function getUserByID(userId) {
  * @returns
  */
 export async function getUserByEmail(email) {
-  try {
-    const user = await dB.users.findOne({ where: { email: email } });
-    return user;
-  } catch (err) {
-    throw new Error(err.message);
+  const user = await dB.users.findOne({ where: { email: email } });
+  if (!user) {
+    throw new APIError(
+      "NOT FOUND",
+      httpStatus.NOT_FOUND,
+      true,
+      "User account not found"
+    );
   }
+  return user;
 }
 
 /**
@@ -64,19 +83,23 @@ export async function getUserByEmail(email) {
  * @returns
  */
 export async function updateUser(data, userId) {
-  try {
-    const user = await dB.users.update(
-      { ...data },
-      {
-        where: {
-          id: userId,
-        },
-      }
+  const user = await dB.users.update(
+    { ...data },
+    {
+      where: {
+        id: userId,
+      },
+    }
+  );
+  if (!user) {
+    throw new APIError(
+      "NOT FOUND",
+      httpStatus.NOT_FOUND,
+      true,
+      "Unable to update user account"
     );
-    return user;
-  } catch (err) {
-    throw new Error(err);
   }
+  return user;
 }
 
 /**
@@ -85,14 +108,18 @@ export async function updateUser(data, userId) {
  * @returns
  */
 export async function removeUser(userId) {
-  try {
-    const user = await dB.users.destroy({
-      where: {
-        id: userId,
-      },
-    });
-    return user;
-  } catch (err) {
-    throw new Error(err);
+  const user = await dB.users.destroy({
+    where: {
+      id: userId,
+    },
+  });
+  if (!user) {
+    throw new APIError(
+      "NOT FOUND",
+      httpStatus.NOT_FOUND,
+      true,
+      "Unable to delete user account"
+    );
   }
+  return user;
 }
