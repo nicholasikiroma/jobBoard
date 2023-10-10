@@ -1,14 +1,23 @@
 import express from "express";
-import { createUser, fetchUsers } from "../controllers/users.constroller.js";
+import {
+  createUser,
+  deleteOneUser,
+  fetchOneUser,
+  fetchUsers,
+  updateOneUser,
+} from "../controllers/users.constroller.js";
+import jwtRequired from "../middlewares/verifyJWT.js";
 
-const router = express.Router();
+const userRouter = express.Router();
 
-router.get("", fetchUsers);
+userRouter.get("", fetchUsers);
 
-router.post("", createUser);
+userRouter.get("/:userId", fetchOneUser);
 
-router.put("/:id");
+userRouter.post("", createUser);
 
-router.delete("/:id");
+userRouter.put("/:userId", jwtRequired, updateOneUser);
 
-export { router };
+userRouter.delete("/:userId", jwtRequired, deleteOneUser);
+
+export default userRouter;

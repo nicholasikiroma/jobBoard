@@ -25,12 +25,17 @@ export default (sequelize, Sequelize) => {
       },
       freelancer_id: {
         type: Sequelize.UUID,
-        allowNull: false,
+        allowNull: true,
       },
       status: {
         type: Sequelize.ENUM(["open", "pending", "completed"]),
-        allowNull: true,
+        allowNull: false,
         defaultValue: "open",
+      },
+      skillLeve: {
+        type: Sequelize.ENUM(["beginner", "intermediate", "expert"]),
+        allowNull: false,
+        defaultValue: "beginner",
       },
     },
     {

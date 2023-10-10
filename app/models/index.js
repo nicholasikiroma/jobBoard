@@ -1,12 +1,12 @@
 import { Sequelize } from "sequelize";
 import logger from "../config/logger.js";
 import pkg from "../config/baseConfigs.cjs";
-const { sequelize } = pkg;
-import userModels from "./user.model.js";
+import userModels from "./users.model.js";
 import jobPostingModels from "./jobPosting.model.js";
-import applicationModels from "./application.model.js";
+import applicationModels from "./applications.model.js";
 import skillsModels from "./skills.model.js";
 import userSkillsModels from "./userSkills.model.js";
+const { sequelize } = pkg;
 
 const dB = {};
 const sequelizeInstance = new Sequelize(

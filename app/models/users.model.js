@@ -1,3 +1,5 @@
+import bcrypt from "bcrypt";
+
 export default (sequelize, Sequelize) => {
   const Users = sequelize.define(
     "users",
@@ -37,11 +39,28 @@ export default (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         allowNull: true,
       },
+      profilePicture: {
+        type: Sequelize.STRING,
+        allowNull: true,
+      },
     },
     {
       timestamps: true,
     }
   );
+
+  // Hash the password before saving
+  Users.beforeCreate(async (user) => {
+    const saltRounds = 10;
+    const hashedPassword = await bcrypt.hash(user.hashed_password, saltRounds);
+    user.hashed_password = hashedPassword;
+  });
+
+  Users.beforeUpdate(async (user) => {
+    const saltRounds = 10;
+    const hashedPassword = await bcrypt.hash(user.hashed_password, saltRounds);
+    user.hashed_password = hashedPassword;
+  });
 
   return Users;
 };
