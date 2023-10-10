@@ -488,3 +488,11 @@
 [35m[39m
 [2023-10-10 21:18:35:1835] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/auth 401 41 - 1206.505 ms[39m
 [35m[39m
+[2023-10-10 21:23:43:2343] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 21:23:43:2343] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:23:59:2359] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 21:23:59:2359] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:24:28:2428] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 21:24:29:2429] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:24:41:2441] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 21:24:41:2441] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m

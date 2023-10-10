@@ -129,3 +129,7 @@
 [31m    at getUserByEmail (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/user.service.js:71:11)[39m
 [31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
 [31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:37:24[39m
+[2023-10-10 21:23:43:2343] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:23:59:2359] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:24:29:2429] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:24:41:2441] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
