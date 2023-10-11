@@ -21,6 +21,7 @@ export const fetchOneJob = asyncHandler(async (req, res) => {
 export const fetchUserJobs = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   const id = req.userId;
+
   if (!id === userId) {
     throw new APIError(
       "UNAUTHORIZED",

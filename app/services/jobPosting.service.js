@@ -1,6 +1,7 @@
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
+import { Op } from "sequelize";
 
 export async function getJobById(jobId) {
   const job = await dB.jobPostings.findByPk(jobId);
@@ -18,7 +19,7 @@ export async function getJobById(jobId) {
 export async function getUserJobs(userId) {
   const userJobs = await dB.jobPostings.findAll({
     where: {
-      employer_id: userId,
+      [Op.or]: [{ employer_id: userId }, { freelancer_id: userId }],
     },
   });
   if (!userJobs) {

@@ -496,3 +496,21 @@
 [2023-10-10 21:24:29:2429] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
 [2023-10-10 21:24:41:2441] [32minfo[39m: [32mServer running on 3001[39m
 [2023-10-10 21:24:41:2441] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-10 21:48:33:4833] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-10 21:48:37:4837] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-11 01:15:56:1556] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-11 01:15:59:1559] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-11 01:16:27:1627] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/auth 401 41 - 1106.117 ms[39m
+[35m[39m
+[2023-10-11 01:16:36:1636] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/auth 200 613 - 399.127 ms[39m
+[35m[39m
+[2023-10-11 01:17:13:1713] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings/users/d43fcdb1-f9eb-4b1c-ae56-52724a6fff6f 200 2 - 2530.149 ms[39m
+[35m[39m
+[2023-10-11 01:23:57:2357] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/auth 200 601 - 6193.170 ms[39m
+[35m[39m
+[2023-10-11 01:27:11:2711] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/job-postings 201 385 - 6076.884 ms[39m
+[35m[39m
+[2023-10-11 01:27:52:2752] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings/users/d43fcdb1-f9eb-4b1c-ae56-52724a6fff6f 200 2 - 1255.869 ms[39m
+[35m[39m
+[2023-10-11 01:28:07:287] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings/users/1b206b5b-d119-458a-92fd-399db87fbf4b 200 387 - 1016.992 ms[39m
+[35m[39m

@@ -42,6 +42,7 @@ function associateModels() {
   dB.users.hasMany(dB.jobPostings, {
     foreignKey: "employer_id",
     as: "employerJobs",
+    onDelete: "CASCADE",
   });
 
   dB.users.hasMany(dB.jobPostings, {
@@ -52,6 +53,7 @@ function associateModels() {
   dB.jobPostings.hasMany(dB.applications, {
     foreignKey: "job_posting_id",
     as: "applications",
+    onDelete: "CASCADE",
   });
 
   dB.users.belongsToMany(dB.skills, {
