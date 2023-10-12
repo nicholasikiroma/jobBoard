@@ -1,29 +1,22 @@
 import asyncHandler from "express-async-handler";
-import {
-  getUserByEmail,
-  getUserByID,
-  getUsers,
-  newUser,
-  removeUser,
-  updateUser,
-} from "../services/user.service.js";
+import userService from "../services/user.service.js";
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 
 /**
  *
  */
-export const fetchUsers = asyncHandler(async (req, res) => {
-  const allUsers = await getUsers();
+const fetchUsers = asyncHandler(async (req, res) => {
+  const allUsers = await userService.getUsers();
   res.send(allUsers);
 });
 
 /**
  *
  */
-export const fetchOneUser = asyncHandler(async (req, res) => {
+const fetchOneUser = asyncHandler(async (req, res) => {
   const { userId } = req.params;
-  const user = await getUserByID(userId);
+  const user = await userService.getUserByID(userId);
 
   res.status(httpStatus.OK).send(user);
 });
@@ -31,10 +24,10 @@ export const fetchOneUser = asyncHandler(async (req, res) => {
 /**
  *
  */
-export const createUser = asyncHandler(async (req, res, next) => {
+const createUser = asyncHandler(async (req, res, next) => {
   const data = req.body;
 
-  const existingUser = await getUserByEmail(data.email);
+  const existingUser = await userService.getUserByEmail(data.email);
   if (existingUser) {
     throw new APIError(
       "CONFLICT",
@@ -43,23 +36,31 @@ export const createUser = asyncHandler(async (req, res, next) => {
       "User account with email already exists"
     );
   }
-  const user = await newUser(data);
+  const user = await userService.newUser(data);
   res.status(httpStatus.CREATED).send({
     data: user,
   });
 });
 
-export const updateOneUser = asyncHandler(async (req, res) => {
+const updateOneUser = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   const data = req.body;
 
-  const user = await updateUser(data, userId);
+  const user = await userService.updateUser(data, userId);
   res.status(httpStatus.OK).send({ message: "Account updated" });
 });
 
-export const deleteOneUser = asyncHandler(async (req, res) => {
+const deleteOneUser = asyncHandler(async (req, res) => {
   const { userId } = req.params;
 
-  const user = await removeUser(userId);
+  const user = await userService.removeUser(userId);
   res.status(httpStatus.OK).send({ message: "Account deleted" });
 });
+
+export default userController = {
+  deleteOneUser,
+  updateOneUser,
+  createUser,
+  fetchOneUser,
+  fetchUsers,
+};

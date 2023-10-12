@@ -3,7 +3,7 @@ import { APIError } from "../config/error.js";
 import httpStatus from "http-status";
 
 // fetch application by ID
-export async function getApplicationByID(applicationId) {
+async function getApplicationByID(applicationId) {
   const application = await dB.applications.findByPk(applicationId);
   if (!application) {
     throw new APIError(
@@ -17,7 +17,7 @@ export async function getApplicationByID(applicationId) {
 }
 
 // Get application by applicationId and FreelancerId
-export async function applicationExists(jobId, freelancer_id) {
+async function applicationExists(jobId, freelancer_id) {
   const application = await dB.applications.findOne({
     where: { job_posting_id: jobId, freelancer_id: freelancer_id },
   });
@@ -25,7 +25,7 @@ export async function applicationExists(jobId, freelancer_id) {
 }
 
 // create application
-export async function newApplication(data) {
+async function newApplication(data) {
   const application = await dB.applications.create({ ...data });
   if (!application) {
     throw new APIError(
@@ -39,7 +39,7 @@ export async function newApplication(data) {
 }
 
 // create application
-export async function updateApplication(data, applicationId) {
+async function updateApplication(data, applicationId) {
   const application = await dB.applications.update(
     { ...data },
     {
@@ -60,7 +60,7 @@ export async function updateApplication(data, applicationId) {
 }
 
 // create application
-export async function destroyApplication(applicationId) {
+async function destroyApplication(applicationId) {
   const application = await dB.applications.destroy({
     where: {
       id: applicationId,
@@ -76,3 +76,11 @@ export async function destroyApplication(applicationId) {
   }
   return application;
 }
+
+export default applicationService = {
+  updateApplication,
+  newApplication,
+  destroyApplication,
+  getApplicationByID,
+  applicationExists,
+};

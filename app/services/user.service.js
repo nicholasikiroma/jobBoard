@@ -1,14 +1,12 @@
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
-import logger from "../config/logger.js";
-import { Op } from "sequelize";
 
 /**
  *
  * @returns
  */
-export async function getUsers() {
+async function getUsers() {
   const users = await dB.users.findAll({
     attributes: { exclude: ["hashed_password"] },
     include: [
@@ -40,7 +38,7 @@ export async function getUsers() {
  * @param {Array} data
  * @returns
  */
-export async function newUser(data) {
+async function newUser(data) {
   const user = await dB.users.create({ ...data });
   if (!user) {
     throw new APIError(
@@ -58,7 +56,7 @@ export async function newUser(data) {
  * @param {ObjectId} userId
  * @returns
  */
-export async function getUserByID(userId) {
+async function getUserByID(userId) {
   const user = await dB.users.findByPk(userId);
   if (!user) {
     throw new APIError(
@@ -76,7 +74,7 @@ export async function getUserByID(userId) {
  * @param {string} email
  * @returns
  */
-export async function getUserByEmail(email) {
+async function getUserByEmail(email) {
   const user = await dB.users.findOne({ where: { email: email } });
   return user;
 }
@@ -87,7 +85,7 @@ export async function getUserByEmail(email) {
  * @param {*} userId
  * @returns
  */
-export async function updateUser(data, userId) {
+async function updateUser(data, userId) {
   const user = await dB.users.update(
     { ...data },
     {
@@ -112,7 +110,7 @@ export async function updateUser(data, userId) {
  * @param {*} userId
  * @returns
  */
-export async function removeUser(userId) {
+async function removeUser(userId) {
   const user = await dB.users.destroy({
     where: {
       id: userId,
@@ -128,3 +126,12 @@ export async function removeUser(userId) {
   }
   return user;
 }
+
+export default userService = {
+  getUserByEmail,
+  getUserByID,
+  getUsers,
+  removeUser,
+  updateUser,
+  newUser,
+};

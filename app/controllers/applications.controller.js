@@ -1,22 +1,17 @@
 import asyncHandler from "express-async-handler";
-import {
-  applicationExists,
-  destroyApplication,
-  getApplicationByID,
-  newApplication,
-  updateApplication,
-} from "../services/applications.service.js";
+import applicationService from "../services/applications.service.js";
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
-import logger from "../config/logger.js";
 
-export const fetchApplicationByID = asyncHandler(async (req, res) => {
+const fetchApplicationByID = asyncHandler(async (req, res) => {
   const { applicationId } = req.params;
-  const application = await getApplicationByID(applicationId);
+  const application = await applicationService.getApplicationByID(
+    applicationId
+  );
   res.status(httpStatus.OK).send(application);
 });
 
-export const createApplication = asyncHandler(async (req, res) => {
+const createApplication = asyncHandler(async (req, res) => {
   const data = req.body;
   const role = req.role;
 
@@ -28,7 +23,7 @@ export const createApplication = asyncHandler(async (req, res) => {
       "Employers are not allowed to create applications"
     );
   }
-  const exists = await applicationExists(
+  const exists = await applicationService.applicationExists(
     data.job_posting_id,
     data.freelancer_id
   );
@@ -42,11 +37,11 @@ export const createApplication = asyncHandler(async (req, res) => {
     );
   }
 
-  const application = await newApplication(data);
+  const application = await applicationService.newApplication(data);
   res.status(httpStatus.CREATED).send(application);
 });
 
-export const updateUserApplication = asyncHandler(async (req, res) => {
+const updateUserApplication = asyncHandler(async (req, res) => {
   const data = req.body;
   const { applicationId, userId } = req.params;
   const id = req.user;
@@ -59,7 +54,9 @@ export const updateUserApplication = asyncHandler(async (req, res) => {
       "You are not permitted to operate on this resource"
     );
   }
-  const application = await getApplicationByID(applicationId);
+  const application = await applicationService.getApplicationByID(
+    applicationId
+  );
   if (application.freelancer_id === userId || role === "admin") {
     await destroyApplication(applicationId);
   } else {
@@ -71,11 +68,11 @@ export const updateUserApplication = asyncHandler(async (req, res) => {
     );
   }
 
-  await updateApplication(data, applicationId);
+  await applicationService.updateApplication(data, applicationId);
   res.status(httpStatus.OK).send({ message: "Application updated" });
 });
 
-export const withdrawUserApplication = asyncHandler(async (req, res) => {
+const withdrawUserApplication = asyncHandler(async (req, res) => {
   const { applicationId, user } = req.params;
   const id = req.id;
   const role = req.role;
@@ -88,7 +85,9 @@ export const withdrawUserApplication = asyncHandler(async (req, res) => {
       "You are not permitted to operate on this resource"
     );
   }
-  const application = await getApplicationByID(applicationId);
+  const application = await applicationService.getApplicationByID(
+    applicationId
+  );
 
   if (application.freelancer_id === userId || role === "admin") {
     await destroyApplication(applicationId);
@@ -104,7 +103,7 @@ export const withdrawUserApplication = asyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ message: "Application withdrawn" });
 });
 
-export const acceptApplication = asyncHandler(async (req, res) => {
+const acceptApplication = asyncHandler(async (req, res) => {
   const { userId, applicationId } = req.params;
   const role = req.role;
   const id = req.user;
@@ -118,8 +117,10 @@ export const acceptApplication = asyncHandler(async (req, res) => {
       "You are not permitted to operate on this resource"
     );
   }
-  const application = await getApplicationByID(applicationId);
-  logger.info(application);
+  const application = await applicationService.getApplicationByID(
+    applicationId
+  );
+
   if (application.employer_id === userId || role === "admin") {
     application.status = status;
     await application.save();
@@ -131,7 +132,14 @@ export const acceptApplication = asyncHandler(async (req, res) => {
       "You are not permitted to operate on this resource"
     );
   }
-  logger.info("======> This works!");
 
   res.status(httpStatus.OK).send({ message: "Application accepted" });
 });
+
+export default applicationController = {
+  fetchApplicationByID,
+  createApplication,
+  withdrawUserApplication,
+  acceptApplication,
+  updateUserApplication,
+};

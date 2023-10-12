@@ -1,8 +1,8 @@
 import jwtpkg from "jsonwebtoken";
 const { sign, verify } = jwtpkg;
 import bcrypt from "bcrypt";
-import expressAsyncHandler from "express-async-handler";
-import { getUserByEmail, getUserByID } from "../services/user.service.js";
+import asyncHandler from "express-async-handler";
+import userService from "../services/user.service.js";
 import httpStatus from "http-status";
 import pkg from "../config/baseConfigs.cjs";
 const { jwt } = pkg;
@@ -12,10 +12,10 @@ const { jwt } = pkg;
  * @route POST /auth
  * @access Public
  */
-export const login = expressAsyncHandler(async (req, res) => {
+const login = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  const existingUser = await getUserByEmail(email);
+  const existingUser = await userService.getUserByEmail(email);
   if (!existingUser) {
     return res
       .status(httpStatus.UNAUTHORIZED)
@@ -52,7 +52,11 @@ export const login = expressAsyncHandler(async (req, res) => {
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 
-  res.send({ ...existingUser.dataValues, accessToken });
+  res.send({
+    ...existingUser.dataValues,
+    accessToken,
+    hashed_password: undefined,
+  });
 });
 
 /**
@@ -60,7 +64,7 @@ export const login = expressAsyncHandler(async (req, res) => {
  * @route POST /auth/refresh
  * @access Public
  */
-export const refresh = expressAsyncHandler(async (req, res) => {
+const refresh = asyncHandler(async (req, res) => {
   const cookies = req.cookies;
 
   if (!cookies?.jwt) {
@@ -74,11 +78,11 @@ export const refresh = expressAsyncHandler(async (req, res) => {
   verify(
     refreshToken,
     jwt.secret,
-    expressAsyncHandler(async (err, decoded) => {
+    asyncHandler(async (err, decoded) => {
       if (err)
         return res.status(httpStatus.FORBIDDEN).send({ message: "Forbidden" });
 
-      const existingUser = await getUserByID(decoded.userId);
+      const existingUser = await userService.getUserByID(decoded.userId);
 
       if (!existingUser) {
         return res
@@ -107,9 +111,15 @@ export const refresh = expressAsyncHandler(async (req, res) => {
  * @access Public
  * @route POST /auth/logout
  */
-export const logout = expressAsyncHandler(async (req, res) => {
+const logout = asyncHandler(async (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(httpStatus.NO_CONTENT);
   res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
   res.json({ message: "Session cleared" });
 });
+
+export default authController = {
+  logout,
+  login,
+  refresh,
+};

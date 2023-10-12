@@ -3,7 +3,7 @@ import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
 import { Op } from "sequelize";
 
-export async function getJobById(jobId) {
+async function getJobById(jobId) {
   const job = await dB.jobPostings.findByPk(jobId);
   if (!job) {
     throw new APIError(
@@ -16,7 +16,7 @@ export async function getJobById(jobId) {
   return job;
 }
 
-export async function getUserJobs(userId) {
+async function getUserJobs(userId) {
   const userJobs = await dB.jobPostings.findAll({
     where: {
       [Op.or]: [{ employer_id: userId }, { freelancer_id: userId }],
@@ -33,7 +33,7 @@ export async function getUserJobs(userId) {
   return userJobs;
 }
 
-export async function getAllJobs() {
+async function getAllJobs() {
   const allJobs = await dB.jobPostings.findAll({ include: "applications" });
   if (!allJobs) {
     throw new APIError(
@@ -46,7 +46,7 @@ export async function getAllJobs() {
   return allJobs;
 }
 
-export async function newJob(data) {
+async function newJob(data) {
   const job = await dB.jobPostings.create({ ...data });
   if (!job) {
     throw new APIError(
@@ -59,7 +59,7 @@ export async function newJob(data) {
   return job;
 }
 
-export async function updateOneJob(jobId, data) {
+async function updateOneJob(jobId, data) {
   const jobUpdate = await dB.jobPostings.update(
     { ...data },
     {
@@ -79,7 +79,7 @@ export async function updateOneJob(jobId, data) {
   return jobUpdate;
 }
 
-export async function destroyJob(jobId) {
+async function destroyJob(jobId) {
   const job = await dB.jobPostings.destroy({
     where: {
       id: jobId,
@@ -95,3 +95,13 @@ export async function destroyJob(jobId) {
   }
   return job;
 }
+
+export default jobPostingService = {
+  getAllJobs,
+  getJobById,
+  getUserJobs,
+  destroyJob,
+  updateOneJob,
+  newJob,
+  job,
+};

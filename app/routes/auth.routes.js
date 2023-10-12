@@ -1,13 +1,13 @@
 import express from "express";
 import loginLimiter from "../middlewares/loginLimiter.js";
-import { login, logout, refresh } from "../controllers/auth.controller.js";
+import authController from "../controllers/auth.controller.js";
 
 const authRouter = express.Router();
 
-authRouter.post("", loginLimiter, login);
+authRouter.post("", loginLimiter, authController.login);
 
-authRouter.get("/refresh", refresh);
+authRouter.get("/refresh", authController.refresh);
 
-authRouter.post("/logout", logout);
+authRouter.post("/logout", authController.logout);
 
 export default authRouter;

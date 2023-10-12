@@ -133,3 +133,346 @@
 [2023-10-10 21:23:59:2359] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
 [2023-10-10 21:24:29:2429] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
 [2023-10-10 21:24:41:2441] [31merror[39m: [31mFailed to connect to database getaddrinfo EAI_AGAIN tai.db.elephantsql.com[39m
+[2023-10-11 20:17:22:1722] [31merror[39m: [31mUnauthorized: Employers are not allowed to create applications[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:22:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[2023-10-11 20:20:28:2028] [31merror[39m: [31mUnauthorized: Employers are not allowed to create applications[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:22:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[2023-10-11 20:20:42:2042] [31merror[39m: [31mUnauthorized: Employers are not allowed to create applications[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:22:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[2023-10-11 20:22:38:2238] [31merror[39m: [31mUnauthorized: Employers are not allowed to create applications[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:22:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[2023-10-11 20:23:57:2357] [31merror[39m: [31mUnauthorized: Employers are not allowed to create applications[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:23:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[2023-10-11 20:26:12:2612] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:31:23[39m
+[2023-10-11 20:27:57:2757] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:31:23[39m
+[2023-10-11 20:33:55:3355] [31merror[39m: [31mUnauthorized: Employers are not allowed to create applications[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:23:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[2023-10-11 22:21:36:2136] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async job_postings.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newJob (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/jobPosting.service.js:50:15)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/jobPostings.controller.js:49:17[39m
+[2023-10-11 22:24:34:2434] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:31:18[39m
+[2023-10-11 22:24:57:2457] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:31:18[39m
+[2023-10-11 22:28:18:2818] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:33:18[39m
+[2023-10-11 22:29:38:2938] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:32:18[39m
+[2023-10-11 22:31:12:3112] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:32:18[39m
+[2023-10-11 22:32:07:327] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:32:18[39m
+[2023-10-11 22:32:54:3254] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async applications.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async applications.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async applicationExists (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:21:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:32:18[39m
+[2023-10-11 22:37:01:371] [31merror[39m: [31mNot Acceptable: Already applied to this job[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:37:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-11 22:44:24:4424] [31merror[39m: [31mUnauthorized: You are not permitted to operate on this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:114:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-11 22:45:20:4520] [31merror[39m: [31mUnauthorized: You are not permitted to operate on this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:114:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-11 22:49:07:497] [31merror[39m: [31mUnauthorized: You are not permitted to operate on this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:114:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-11 22:52:29:5229] [31merror[39m: [31mUnauthorized: You are not permitted to operate on this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:115:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-11 22:55:31:5531] [31merror[39m: [31mUnauthorized: You are not permitted to operate on this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:115:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-11 22:58:43:5843] [31merror[39m: [31mUnauthorized: You are not permitted to operate on this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:116:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-11 23:15:44:1544] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:29:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:45:23[39m
+[2023-10-11 23:19:53:1953] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:29:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:45:23[39m
+[2023-10-11 23:22:06:226] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:29:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:45:23[39m
+[2023-10-11 23:28:58:2858] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:29:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:45:23[39m
+[2023-10-11 23:29:41:2941] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:29:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:45:23[39m
+[2023-10-11 23:30:27:3027] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async applications.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newApplication (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/applications.service.js:29:23)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:45:23[39m
+[2023-10-11 23:32:18:3218] [31merror[39m: [31mError seeding the database: relation "users" does not exist[39m
+[2023-10-12 01:02:53:253] [31merror[39m: [31mError[39m
+[31m    at Query.run (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:315:28[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async PostgresQueryInterface.insert (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2490:35)[39m
+[31m    at async job_postings.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async newJob (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/jobPosting.service.js:50:15)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/jobPostings.controller.js:49:17[39m
+[2023-10-12 01:12:15:1215] [31merror[39m: [31mReferenceError: Cannot access 'application' before initialization[39m
+[31m    at applications.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/applications.model.js:43:38)[39m
+[31m    at applications.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:18)[39m
+[31m    at model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:128:5[39m
+[2023-10-12 01:12:27:1227] [31merror[39m: [31mReferenceError: Cannot access 'application' before initialization[39m
+[31m    at applications.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/applications.model.js:43:38)[39m
+[31m    at applications.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:18)[39m
+[31m    at model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:128:5[39m
+[2023-10-12 01:12:28:1228] [31merror[39m: [31mReferenceError: Cannot access 'application' before initialization[39m
+[31m    at applications.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/applications.model.js:43:38)[39m
+[31m    at applications.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:18)[39m
+[31m    at model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:128:5[39m
+[2023-10-12 01:14:55:1455] [31merror[39m: [31mReferenceError: Cannot access 'application' before initialization[39m
+[31m    at applications.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/applications.model.js:43:38)[39m
+[31m    at applications.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:18)[39m
+[31m    at model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:128:5[39m
+[2023-10-12 01:20:58:2058] [31merror[39m: [31mReferenceError: Cannot access 'application' before initialization[39m
+[31m    at applications.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/applications.model.js:43:38)[39m
+[31m    at applications.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:18)[39m
+[31m    at model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:128:5[39m
+[2023-10-12 01:23:30:2330] [31merror[39m: [31mReferenceError: Cannot access 'application' before initialization[39m
+[31m    at applications.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/applications.model.js:43:38)[39m
+[31m    at applications.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:18)[39m
+[31m    at model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:30)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:125:5[39m
+[2023-10-12 01:36:27:3627] [31merror[39m: [31mNot Acceptable: Already applied to this job[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/applications.controller.js:37:11[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-12 02:14:04:144] [31merror[39m: [31mReferenceError: employerJobs is not defined[39m
+[31m    at getUsers (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/user.service.js:15:16)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/users.constroller.js:17:26[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:280:10)[39m
