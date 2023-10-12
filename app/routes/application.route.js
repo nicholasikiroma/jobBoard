@@ -1,5 +1,5 @@
 import express from "express";
-import applicationController from "../controllers/applications.controller.js";
+import { applicationController } from "../controllers/applications.controller.js";
 import jwtRequired from "../middlewares/verifyJWT.js";
 
 const applicationRouter = express.Router();

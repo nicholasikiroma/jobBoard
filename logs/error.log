@@ -476,3 +476,14 @@
 [31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
 [31m    at Function.process_params (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:346:12)[39m
 [31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:280:10)[39m
+[2023-10-12 12:20:53:2053] [31merror[39m: [31mUNAUTHORIZED: You do not have permissions to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/jobPostings.controller.js:95:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m

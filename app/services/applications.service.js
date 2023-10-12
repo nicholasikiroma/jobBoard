@@ -77,7 +77,7 @@ async function destroyApplication(applicationId) {
   return application;
 }
 
-export default applicationService = {
+export const applicationService = {
   updateApplication,
   newApplication,
   destroyApplication,

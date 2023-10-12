@@ -96,12 +96,11 @@ async function destroyJob(jobId) {
   return job;
 }
 
-export default jobPostingService = {
+export const jobPostingService = {
   getAllJobs,
   getJobById,
   getUserJobs,
   destroyJob,
   updateOneJob,
   newJob,
-  job,
 };

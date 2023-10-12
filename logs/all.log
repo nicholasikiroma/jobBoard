@@ -1256,3 +1256,32 @@
 [2023-10-12 02:34:01:341] [32minfo[39m: [32mDatabase is good[39m
 [2023-10-12 02:34:05:345] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/users 200 2361 - 185.445 ms[39m
 [35m[39m
+[2023-10-12 12:14:45:1445] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-12 12:14:52:1452] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-12 12:16:03:163] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/auth 200 528 - 1434.263 ms[39m
+[35m[39m
+[2023-10-12 12:16:57:1657] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings 403 38 - 7.143 ms[39m
+[35m[39m
+[2023-10-12 12:17:09:179] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings 200 1817 - 6229.078 ms[39m
+[35m[39m
+[2023-10-12 12:20:03:203] [35mhttp[39m: [35m::ffff:127.0.0.1 DELETE /api/job-postings/8b8b61d9-caba-41cd-aaef-c139c621188e/users/5ffc7e25-1ea2-4739-9bbf-8fc00b59e909 403 38 - 4.284 ms[39m
+[35m[39m
+[2023-10-12 12:20:28:2028] [35mhttp[39m: [35m::ffff:127.0.0.1 DELETE /api/job-postings/8b8b61d9-caba-41cd-aaef-c139c621188e/users/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VySWQiOiI1ZmZjN2UyNS0xZWEyLTQ3MzktOWJiZi04ZmMwMGI1OWU5MDkiLCJyb2xlIjoiZW1wbG95ZXIifSwiaWF0IjoxNjk3MTA5MzYzLCJleHAiOjE2OTcxMTI5NjN9.xsDn8NLkZ-y3PkPj8jDQE0dJlUhx7rmAPLeB1qbK9CM 403 38 - 1.892 ms[39m
+[35m[39m
+[2023-10-12 12:20:53:2053] [31merror[39m: [31mUNAUTHORIZED: You do not have permissions to access this resource[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/jobPostings.controller.js:95:11[39m
+[31m    at asyncUtilWrap (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express-async-handler/index.js:3:20)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at next (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:144:13)[39m
+[31m    at Route.dispatch (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/route.js:114:3)[39m
+[31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
+[31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-12 12:20:53:2053] [35mhttp[39m: [35m::ffff:127.0.0.1 DELETE /api/job-postings/8b8b61d9-caba-41cd-aaef-c139c621188e/users/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VySWQiOiI1ZmZjN2UyNS0xZWEyLTQ3MzktOWJiZi04ZmMwMGI1OWU5MDkiLCJyb2xlIjoiZW1wbG95ZXIifSwiaWF0IjoxNjk3MTA5MzYzLCJleHAiOjE2OTcxMTI5NjN9.xsDn8NLkZ-y3PkPj8jDQE0dJlUhx7rmAPLeB1qbK9CM 401 126 - 4.815 ms[39m
+[35m[39m
+[2023-10-12 12:21:35:2135] [35mhttp[39m: [35m::ffff:127.0.0.1 DELETE /api/job-postings/8b8b61d9-caba-41cd-aaef-c139c621188e/users/5ffc7e25-1ea2-4739-9bbf-8fc00b59e909 200 25 - 1412.842 ms[39m
+[35m[39m
+[2023-10-12 12:21:42:2142] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings 200 714 - 280.320 ms[39m
+[35m[39m

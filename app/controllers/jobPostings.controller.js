@@ -1,7 +1,7 @@
 import asyncHandler from "express-async-handler";
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
-import jobPostingService from "../services/jobPosting.service.js";
+import { jobPostingService } from "../services/jobPosting.service.js";
 
 // fetch one job posting
 const fetchOneJob = asyncHandler(async (req, res) => {
@@ -116,7 +116,7 @@ const deleteJob = asyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ message: "Job deleted" });
 });
 
-export default jobPostingController = {
+export const jobPostingController = {
   createJob,
   deleteJob,
   updateJob,

@@ -127,7 +127,7 @@ async function removeUser(userId) {
   return user;
 }
 
-export default userService = {
+export const userService = {
   getUserByEmail,
   getUserByID,
   getUsers,

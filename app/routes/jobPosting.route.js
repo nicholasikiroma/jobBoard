@@ -1,6 +1,6 @@
 import express from "express";
 import jwtRequired from "../middlewares/verifyJWT.js";
-import jobPostingController from "../controllers/jobPostings.controller.js";
+import { jobPostingController } from "../controllers/jobPostings.controller.js";
 
 const jobRouter = express.Router();
 

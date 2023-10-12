@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import applicationService from "../services/applications.service.js";
+import { applicationService } from "../services/applications.service.js";
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 
@@ -136,7 +136,7 @@ const acceptApplication = asyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ message: "Application accepted" });
 });
 
-export default applicationController = {
+export const applicationController = {
   fetchApplicationByID,
   createApplication,
   withdrawUserApplication,

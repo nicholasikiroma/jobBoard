@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import userService from "../services/user.service.js";
+import { userService } from "../services/user.service.js";
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 
@@ -57,7 +57,7 @@ const deleteOneUser = asyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ message: "Account deleted" });
 });
 
-export default userController = {
+export const userController = {
   deleteOneUser,
   updateOneUser,
   createUser,

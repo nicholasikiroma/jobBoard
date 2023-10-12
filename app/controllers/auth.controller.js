@@ -2,7 +2,7 @@ import jwtpkg from "jsonwebtoken";
 const { sign, verify } = jwtpkg;
 import bcrypt from "bcrypt";
 import asyncHandler from "express-async-handler";
-import userService from "../services/user.service.js";
+import { userService } from "../services/user.service.js";
 import httpStatus from "http-status";
 import pkg from "../config/baseConfigs.cjs";
 const { jwt } = pkg;
@@ -118,7 +118,7 @@ const logout = asyncHandler(async (req, res) => {
   res.json({ message: "Session cleared" });
 });
 
-export default authController = {
+export const authController = {
   logout,
   login,
   refresh,
