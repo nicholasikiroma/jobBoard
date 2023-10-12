@@ -28,7 +28,7 @@ export default (sequelize, Sequelize) => {
         allowNull: true,
       },
       status: {
-        type: Sequelize.ENUM(["open", "pending", "completed"]),
+        type: Sequelize.ENUM(["open", "in-progress", "completed"]),
         allowNull: false,
         defaultValue: "open",
       },

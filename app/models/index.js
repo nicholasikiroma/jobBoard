@@ -50,6 +50,11 @@ function associateModels() {
     as: "freelancerJobs",
   });
 
+  dB.users.hasMany(dB.applications, {
+    foreignKey: "freelancer_id",
+    as: "freelancerApplications",
+  });
+
   dB.jobPostings.hasMany(dB.applications, {
     foreignKey: "job_posting_id",
     as: "applications",

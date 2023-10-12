@@ -2,6 +2,7 @@ import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 import dB from "../models/index.js";
 import logger from "../config/logger.js";
+import { Op } from "sequelize";
 
 /**
  *
@@ -10,7 +11,18 @@ import logger from "../config/logger.js";
 export async function getUsers() {
   const users = await dB.users.findAll({
     attributes: { exclude: ["hashed_password"] },
+    include: [
+      {
+        model: dB.jobPostings, // Include "freelancerJobs"
+        as: "freelancerJobs",
+      },
+      {
+        model: dB.jobPostings, // Include "employerJobs"
+        as: "employerJobs",
+      },
+    ],
   });
+
   if (!users) {
     throw new APIError(
       "INTERNAL SERVER ERROR",

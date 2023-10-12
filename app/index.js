@@ -4,6 +4,7 @@ import dB from "./models/index.js";
 import router from "./routes/index.js";
 import cookieParser from "cookie-parser";
 import { errorHandler } from "./middlewares/errorHandler.js";
+import seedDatabase from "../seed.js";
 
 const app = express();
 app.use(express.json());

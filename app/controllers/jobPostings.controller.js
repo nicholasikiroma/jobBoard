@@ -22,7 +22,7 @@ export const fetchUserJobs = asyncHandler(async (req, res) => {
   const { userId } = req.params;
   const id = req.userId;
 
-  if (!id === userId) {
+  if (id !== userId) {
     throw new APIError(
       "UNAUTHORIZED",
       httpStatus.UNAUTHORIZED,
@@ -66,7 +66,7 @@ export const updateJob = asyncHandler(async (req, res) => {
   const id = req.userId;
   const role = req.role;
 
-  if (!id === userId) {
+  if (id !== userId) {
     throw new APIError(
       "UNAUTHORIZED",
       httpStatus.UNAUTHORIZED,
@@ -98,7 +98,7 @@ export const deleteJob = asyncHandler(async (req, res) => {
   const id = req.userId;
   const role = req.role;
 
-  if (!id === userId) {
+  if (id !== userId) {
     throw new APIError(
       "UNAUTHORIZED",
       httpStatus.UNAUTHORIZED,

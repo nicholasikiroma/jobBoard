@@ -4,14 +4,15 @@ const { env: NODE_ENV } = pkg;
 import userRouter from "./user.route.js";
 import authRouter from "./auth.routes.js";
 import jobRouter from "./jobPosting.route.js";
+import applicationRouter from "./application.route.js";
 
 const router = Router();
 
 const defaultRoutes = [
-  // {
-  //   path: "/applications",
-  //   route: applicationRoute,
-  // },
+  {
+    path: "/applications",
+    route: applicationRouter,
+  },
   {
     path: "/job-postings",
     route: jobRouter,
@@ -28,14 +29,14 @@ const defaultRoutes = [
 ];
 
 const devRoutes = [
-  //{
-  //  path: "/dev/applications",
-  //  route: applicationRoute,
-  //},
-  //{
-  //  path: "/dev/job-postings",
-  //  route: jobsRoute,
-  //},
+  {
+    path: "/dev/applications",
+    route: applicationRouter,
+  },
+  {
+    path: "/dev/job-postings",
+    route: jobRouter,
+  },
   {
     path: "/dev/users",
     route: userRouter,

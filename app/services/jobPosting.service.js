@@ -34,7 +34,7 @@ export async function getUserJobs(userId) {
 }
 
 export async function getAllJobs() {
-  const allJobs = await dB.jobPostings.findAll();
+  const allJobs = await dB.jobPostings.findAll({ include: "applications" });
   if (!allJobs) {
     throw new APIError(
       "NOT FOUND",
