@@ -1285,3 +1285,21 @@
 [35m[39m
 [2023-10-12 12:21:42:2142] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings 200 714 - 280.320 ms[39m
 [35m[39m
+[2023-10-12 20:13:16:1316] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-12 20:13:19:1319] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-12 20:13:43:1343] [35mhttp[39m: [35m::ffff:127.0.0.1 POST /api/auth 200 528 - 1156.447 ms[39m
+[35m[39m
+[2023-10-12 20:15:01:151] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings/shdjdiwir - - - - ms[39m
+[35m[39m
+[2023-10-12 20:16:52:1652] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-12 20:16:54:1654] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-12 20:17:33:1733] [32minfo[39m: [32mServer running on 3001[39m
+[2023-10-12 20:17:35:1735] [32minfo[39m: [32mDatabase is good[39m
+[2023-10-12 20:18:05:185] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings/shdjdiwir 422 38 - 14.312 ms[39m
+[35m[39m
+[2023-10-12 20:18:51:1851] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings 403 38 - 7.691 ms[39m
+[35m[39m
+[2023-10-12 20:18:58:1858] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings 200 714 - 1446.937 ms[39m
+[35m[39m
+[2023-10-12 20:19:11:1911] [35mhttp[39m: [35m::ffff:127.0.0.1 GET /api/job-postings/dea66d9e-5349-4457-bad2-264a58becf02 200 344 - 1048.289 ms[39m
+[35m[39m
