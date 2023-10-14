@@ -5,10 +5,15 @@ import userRouter from "./user.route.js";
 import authRouter from "./auth.routes.js";
 import jobRouter from "./jobPosting.route.js";
 import applicationRouter from "./application.route.js";
+import walletRouter from "./wallets.route.js";
 
 const router = Router();
 
 const defaultRoutes = [
+  {
+    path: "/wallets",
+    route: walletRouter,
+  },
   {
     path: "/applications",
     route: applicationRouter,

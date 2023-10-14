@@ -13,7 +13,7 @@ const { jwt } = pkg;
  * @access Public
  */
 const login = asyncHandler(async (req, res) => {
-  const { email, password } = req.body;
+  const { email, hashed_password } = req.body;
 
   const existingUser = await userService.getUserByEmail(email);
   if (!existingUser) {
@@ -22,7 +22,10 @@ const login = asyncHandler(async (req, res) => {
       .send({ message: "incorrect email or password" });
   }
 
-  const match = await bcrypt.compare(password, existingUser.hashed_password);
+  const match = await bcrypt.compare(
+    hashed_password,
+    existingUser.hashed_password
+  );
 
   if (!match) {
     return res
@@ -35,6 +38,7 @@ const login = asyncHandler(async (req, res) => {
       UserInfo: {
         userId: existingUser.id,
         role: existingUser.role,
+        walletId: existingUser.wallet_id,
       },
     },
     jwt.secret,
@@ -95,6 +99,7 @@ const refresh = asyncHandler(async (req, res) => {
           UserInfo: {
             userId: existingUser.id,
             role: existingUser.role,
+            walletId: existingUser.wallet_id,
           },
         },
         jwt.secret,

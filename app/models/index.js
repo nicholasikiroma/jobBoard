@@ -6,6 +6,9 @@ import jobPostingModels from "./jobPosting.model.js";
 import applicationModels from "./applications.model.js";
 import skillsModels from "./skills.model.js";
 import userSkillsModels from "./userSkills.model.js";
+import reviewsModel from "./reviews.model.js";
+import transactionsModels from "./transactions.models.js";
+import walletsModel from "./wallets.model.js";
 const { sequelize } = pkg;
 
 const dB = {};
@@ -36,8 +39,11 @@ dB.jobPostings = jobPostingModels(sequelizeInstance, Sequelize);
 dB.applications = applicationModels(sequelizeInstance, Sequelize);
 dB.skills = skillsModels(sequelizeInstance, Sequelize);
 dB.userSkills = userSkillsModels(sequelizeInstance, Sequelize);
+dB.reviews = reviewsModel(sequelizeInstance, Sequelize);
+dB.transactions = transactionsModels(sequelizeInstance, Sequelize);
+dB.wallets = walletsModel(sequelizeInstance, Sequelize);
 
-// association
+// associations
 function associateModels() {
   dB.users.hasMany(dB.jobPostings, {
     foreignKey: "employer_id",
@@ -53,6 +59,7 @@ function associateModels() {
   dB.users.hasMany(dB.applications, {
     foreignKey: "freelancer_id",
     as: "freelancerApplications",
+    onDelete: "CASCADE",
   });
 
   dB.jobPostings.hasMany(dB.applications, {
@@ -66,6 +73,34 @@ function associateModels() {
     foreignKey: "user_id",
     otherKey: "skill_id",
     as: "skills",
+  });
+
+  dB.wallets.hasOne(dB.users, {
+    foreignKey: "wallet_id",
+  });
+
+  dB.users.belongsTo(dB.wallets, {
+    foreignKey: "wallet_id",
+    onDelete: "CASCADE",
+  });
+
+  dB.wallets.hasMany(dB.transactions, {
+    foreignKey: "wallet_id",
+    as: "transactions",
+    onDelete: "CASCADE",
+  });
+
+  dB.transactions.belongsTo(dB.wallets, {
+    foreignKey: "wallet_id",
+  });
+
+  dB.reviews.hasOne(dB.jobPostings, {
+    foreignKey: "review_id",
+  });
+
+  dB.jobPostings.belongsTo(dB.reviews, {
+    foreignKey: "review_id",
+    onDelete: "CASCADE",
   });
 }
 

@@ -32,7 +32,7 @@ export default (sequelize, Sequelize) => {
         allowNull: false,
         defaultValue: "open",
       },
-      skillLeve: {
+      skill_level: {
         type: Sequelize.ENUM(["beginner", "intermediate", "expert"]),
         allowNull: false,
         defaultValue: "beginner",

@@ -487,3 +487,177 @@
 [31m    at Layer.handle [as handle_request] (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/layer.js:95:5)[39m
 [31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:284:15[39m
 [31m    at param (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/express/lib/router/index.js:365:14)[39m
+[2023-10-14 16:50:21:5021] [31merror[39m: [31mError: data and hash arguments required[39m
+[31m    at Object.compare (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/bcrypt/bcrypt.js:208:17)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/bcrypt/promises.js:29:12[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at module.exports.promise (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/bcrypt/promises.js:20:12)[39m
+[31m    at Object.compare (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/bcrypt/bcrypt.js:204:25)[39m
+[31m    at file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/auth.controller.js:25:30[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[2023-10-14 17:11:37:1137] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:9:18[39m
+[2023-10-14 17:12:45:1245] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:9:18[39m
+[2023-10-14 17:13:18:1318] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:9:18[39m
+[2023-10-14 17:20:03:203] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:10:18[39m
+[2023-10-14 17:22:53:2253] [31merror[39m: [31mError: Association with alias "userId" does not exist on wallets[39m
+[31m    at wallets._transformStringAssociation (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:275:15)[39m
+[31m    at wallets._conformInclude (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:286:22)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:270:61[39m
+[31m    at Array.map (<anonymous>)[39m
+[31m    at wallets._conformIncludes (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:270:39)[39m
+[31m    at wallets._baseMerge (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:622:10)[39m
+[31m    at wallets._defaultsOptions (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:656:17)[39m
+[31m    at wallets._injectScope (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2053:10)[39m
+[31m    at wallets.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1111:10)[39m
+[31m    at wallets.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:23)[39m
+[2023-10-14 17:24:29:2429] [31merror[39m: [31mError: Association with alias "user_id" does not exist on wallets[39m
+[31m    at wallets._transformStringAssociation (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:275:15)[39m
+[31m    at wallets._conformInclude (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:286:22)[39m
+[31m    at /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:270:61[39m
+[31m    at Array.map (<anonymous>)[39m
+[31m    at wallets._conformIncludes (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:270:39)[39m
+[31m    at wallets._baseMerge (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:622:10)[39m
+[31m    at wallets._defaultsOptions (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:656:17)[39m
+[31m    at wallets._injectScope (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2053:10)[39m
+[31m    at wallets.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1111:10)[39m
+[31m    at wallets.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:23)[39m
+[2023-10-14 17:45:38:4538] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:10:18[39m
+[2023-10-14 17:46:01:461] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:10:18[39m
+[2023-10-14 17:48:52:4852] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:10:18[39m
+[2023-10-14 17:49:27:4927] [31merror[39m: [31mNot found: wallet not found[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.fetchWallet (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/wallets.service.js:12:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:10:18[39m
+[2023-10-14 17:59:09:599] [31merror[39m: [31mSequelizeValidationError: notNull Violation: transactions.type cannot be null[39m
+[31m    at InstanceValidator._validate (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/instance-validator.js:50:13)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async InstanceValidator._validateAndRunHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/instance-validator.js:60:7)[39m
+[31m    at async InstanceValidator.validate (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/instance-validator.js:54:12)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2426:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:03:20:320] [31merror[39m: [31mTypeError: Cannot read properties of null (reading 'balance')[39m
+[31m    at transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:49:22)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:03:46:346] [31merror[39m: [31mTypeError: Cannot read properties of null (reading 'balance')[39m
+[31m    at transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:49:22)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:06:48:648] [31merror[39m: [31mTypeError: Cannot read properties of null (reading 'balance')[39m
+[31m    at transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:49:22)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:15:50:1550] [31merror[39m: [31mTypeError: Cannot read properties of null (reading 'balance')[39m
+[31m    at transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:49:39)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:23:30:2330] [31merror[39m: [31mTypeError: Cannot read properties of null (reading 'balance')[39m
+[31m    at transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:51:22)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:25:53:2553] [31merror[39m: [31mTypeError: Cannot read properties of null (reading 'balance')[39m
+[31m    at transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:52:22)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[31m    at async Object.newTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:6:26)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m
+[2023-10-14 18:29:46:2946] [31merror[39m: [31mSequelizeConnectionAcquireTimeoutError: Operation timeout[39m
+[31m    at ConnectionManager.getConnection (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:206:15)[39m
+[31m    at async /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:305:26[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async wallets.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async wallets.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async wallets.findByPk (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1221:12)[39m
+[31m    at async transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:48:26)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[2023-10-14 18:40:14:4014] [31merror[39m: [31mSequelizeConnectionAcquireTimeoutError: Operation timeout[39m
+[31m    at ConnectionManager.getConnection (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:206:15)[39m
+[31m    at async /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:305:26[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async wallets.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async wallets.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async wallets.findByPk (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1221:12)[39m
+[31m    at async transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:48:26)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[2023-10-14 18:46:56:4656] [31merror[39m: [31mSequelizeConnectionAcquireTimeoutError: Operation timeout[39m
+[31m    at ConnectionManager.getConnection (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:206:15)[39m
+[31m    at async /home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/sequelize.js:305:26[39m
+[31m    at async PostgresQueryInterface.select (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)[39m
+[31m    at async wallets.findAll (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1140:21)[39m
+[31m    at async wallets.findOne (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1240:12)[39m
+[31m    at async wallets.findByPk (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1221:12)[39m
+[31m    at async transactions.<anonymous> (file:///home/puppetmaster/Desktop/projects/jobBoard/app/models/transactions.models.js:50:28)[39m
+[31m    at async transactions.runHooks (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/hooks.js:96:7)[39m
+[31m    at async model.save (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:2436:7)[39m
+[31m    at async transactions.create (/home/puppetmaster/Desktop/projects/jobBoard/node_modules/sequelize/lib/model.js:1362:12)[39m
+[2023-10-14 23:23:06:236] [31merror[39m: [31mInternal Server Error: amount is not defined[39m
+[31m    at new BaseError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:10:11)[39m
+[31m    at new APIError (file:///home/puppetmaster/Desktop/projects/jobBoard/app/config/error.js:21:5)[39m
+[31m    at Object.createTransaction (file:///home/puppetmaster/Desktop/projects/jobBoard/app/services/transactions.service.js:93:11)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+[31m    at async file:///home/puppetmaster/Desktop/projects/jobBoard/app/controllers/wallets.controller.js:16:3[39m

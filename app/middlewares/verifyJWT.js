@@ -22,6 +22,7 @@ const jwtRequired = (req, res, next) => {
     }
     req.user = decoded.UserInfo.userId;
     req.role = decoded.UserInfo.role;
+    req.walletId = decoded.UserInfo.walletId;
     next();
   });
 };

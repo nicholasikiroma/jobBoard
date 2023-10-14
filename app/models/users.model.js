@@ -1,4 +1,7 @@
 import bcrypt from "bcrypt";
+import dB from "./index.js";
+import { APIError } from "../config/error.js";
+import httpStatus from "http-status";
 
 export default (sequelize, Sequelize) => {
   const Users = sequelize.define(
@@ -39,7 +42,7 @@ export default (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         allowNull: true,
       },
-      profilePicture: {
+      profile_picture: {
         type: Sequelize.STRING,
         allowNull: true,
       },
@@ -54,6 +57,24 @@ export default (sequelize, Sequelize) => {
     const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(user.hashed_password, saltRounds);
     user.hashed_password = hashedPassword;
+  });
+
+  Users.beforeCreate(async (user, options) => {
+    const transaction = options.transaction;
+    try {
+      const wallet = await dB.wallets.create({ transaction });
+      if (!wallet) {
+        throw new Error("Failed to create user wallet");
+      }
+      user.wallet_id = wallet.id;
+    } catch (error) {
+      throw new APIError(
+        "Internal Server Error",
+        httpStatus.INTERNAL_SERVER_ERROR,
+        true,
+        error.message
+      );
+    }
   });
 
   Users.beforeUpdate(async (user) => {
