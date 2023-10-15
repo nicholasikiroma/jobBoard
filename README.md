@@ -10,5 +10,28 @@ This project is a RESTful API implementation of a job listing platform, inspired
 - **Digital Wallet:** Each user receives a digital wallet upon registration, allowing simulated transactions.
 - **Review System:** Users can leave reviews for each other after successful job completion.
 
-## Swagger Docs
-<!-- provide link to swagger docs >
+## API Documentation
+
+I have documented this API using the OpenAPI Specification 3.0.0 format. You can find the complete API documentation [here](documentation).
+
+## Database Design
+
+The project includes a database to store user information, job listings, transactions, and reviews. Below is a simplified representation of the database structure:
+
+[Include a brief description or diagram of your database design if possible.]
+
+## CI/CD
+
+I used GitHub Action for CI/CD.
+
+## Future Improvements
+
+There's always room for improvement. Here are some ideas for future enhancements:
+
+- **Rating System:** Implement a rating system to enhance user feedback and trust.
+- **Adding Tags to Jobs:** Allow users to categorize and discover jobs more effectively.
+- **Job Recommendation System:** Explore the possibility of providing job recommendations based on user preferences and skills.
+
+## Contributions
+
+Feel free to reach out to me at <nicholasikiroma@gmail.com> to contribute to the project or suggest improvements.
