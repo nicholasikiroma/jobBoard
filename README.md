@@ -18,7 +18,7 @@ I have documented this API using the OpenAPI Specification 3.0.0 format. You can
 
 The project includes a database to store user information, job listings, transactions, and reviews. Below is a simplified representation of the database structure:
 
-[database design]
+![Database Design](./DbDesign.png)
 
 ## CI/CD
 
