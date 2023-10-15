@@ -3,19 +3,6 @@ import dB from "../models/index.js";
 import { walletService } from "./wallets.service.js";
 import { APIError } from "../config/error.js";
 
-// create transaction
-async function newTransaction(data) {
-  const newTransaction = await dB.transactions.create({ ...data });
-  if (!newTransaction) {
-    throw new APIError(
-      "Internal Server Error",
-      httpStatus.INTERNAL_SERVER_ERROR,
-      true,
-      "Failed to create transaction"
-    );
-  }
-}
-
 // fetch transaction
 async function getTransaction(transactionId) {
   const transaction = await dB.transactions.findByPk(transactionId);
@@ -27,6 +14,25 @@ async function getTransaction(transactionId) {
       "Transaction not found"
     );
   }
+}
+
+async function getUserTransactions(userWallet) {
+  const transactions = await dB.transactions.findAll({
+    where: {
+      wallet_id: userWallet,
+    },
+  });
+
+  if (!transactions) {
+    throw new APIError(
+      "Not Found",
+      httpStatus.NOT_FOUND,
+      true,
+      "Transactions not found for user"
+    );
+  }
+
+  return transactions;
 }
 
 async function getAllTransactions(wallet_id) {
@@ -103,6 +109,6 @@ async function createTransaction(data) {
 export const transactionService = {
   getAllTransactions,
   getTransaction,
-  newTransaction,
+  getUserTransactions,
   createTransaction,
 };

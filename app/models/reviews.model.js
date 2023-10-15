@@ -9,7 +9,7 @@ export default (sequelize, Sequelize) => {
       },
       employer_review: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       freelancer_review: {
         type: Sequelize.STRING,
