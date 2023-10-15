@@ -2,6 +2,7 @@ import asyncHandler from "express-async-handler";
 import httpStatus from "http-status";
 import { APIError } from "../config/error.js";
 import { jobPostingService } from "../services/jobPosting.service.js";
+import { reviewService } from "../services/reviews.service.js";
 
 // fetch one job posting
 const fetchOneJob = asyncHandler(async (req, res) => {
@@ -116,6 +117,64 @@ const deleteJob = asyncHandler(async (req, res) => {
   res.status(httpStatus.OK).send({ message: "Job deleted" });
 });
 
+// job posting review
+const JobReview = asyncHandler(async (req, res) => {
+  const { jobId } = req.params;
+  const userId = req.user;
+  const { type, freelancer_review, employer_review } = req.body;
+  const job = await jobPostingService.getJobById(jobId);
+
+  switch (type) {
+    case "employerFeedback": // feedback created by Employer
+      if (job.employer_id !== userId) {
+        throw new APIError(
+          "Forbidden",
+          httpStatus.FORBIDDEN,
+          true,
+          "You are not allowed to leave a review for this job"
+        );
+      }
+
+      if (!job.review_id) {
+        const review = await reviewService.createReview({ employer_review });
+        job.review_id = review.id;
+        await job.save();
+      } else {
+        await reviewService.updateReview(job.review_id, { employer_review });
+      }
+      break;
+
+    case "freelancerFeedback": // feedback created by freelancer
+      if (job.freelancer_id !== userId) {
+        throw new APIError(
+          "Forbidden",
+          httpStatus.FORBIDDEN,
+          true,
+          "You are not allowed to leave a review for this job"
+        );
+      }
+
+      if (!job.review_id) {
+        const review = await reviewService.createReview({ freelancer_review });
+        job.review_id = review.id;
+        await job.save();
+      } else {
+        await reviewService.updateReview(job.review_id, { freelancer_review });
+      }
+      break;
+
+    default:
+      throw new APIError(
+        "Bad Request",
+        httpStatus.BAD_REQUEST,
+        true,
+        "Request does not contain a valid review type"
+      );
+  }
+
+  res.status(httpStatus.OK).send({ message: "Review created" });
+});
+
 export const jobPostingController = {
   createJob,
   deleteJob,
@@ -123,4 +182,6 @@ export const jobPostingController = {
   fetchAllJobs,
   fetchOneJob,
   fetchUserJobs,
+  createJob,
+  JobReview,
 };

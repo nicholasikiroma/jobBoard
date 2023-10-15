@@ -57,15 +57,7 @@ jobRouter.post(
   "/:jobId/reviews",
   reviewValidator.createReview(),
   validate,
-  jobPostingController
-);
-
-// update review
-jobRouter.post(
-  "/:jobId/reviews/:reviewId",
-  reviewValidator.updateReview(),
-  validate,
-  jobPostingController
+  jobPostingController.JobReview
 );
 
 export default jobRouter;
